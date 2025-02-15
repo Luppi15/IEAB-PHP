@@ -1,0 +1,69 @@
+.button-container {
+    display: flex;
+    background-color: black;
+    width: 50vw;
+    /* Tamanho da barra baseado na largura da tela */
+    max-width: 600px;
+    /* Limite máximo para telas grandes */
+    height: 60px;
+    /* A altura da barra */
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin: 0 auto;
+    /* Centraliza a barra */
+    transition: all ease-in-out 0.3s;
+}
+
+.button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 12vw;
+    /* Tamanho do botão em relação à largura da tela */
+    max-width: 50px;
+    /* Limite máximo do tamanho do botão */
+    height: 12vw;
+    /* Tamanho do botão em relação à largura da tela */
+    max-height: 50px;
+    /* Limite máximo da altura do botão */
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+
+.icon {
+    font-size: 4vw;
+}
+
+@media (max-width: 600px) {
+    .icon {
+        font-size: 6vw;
+        /* Maior em telas pequenas */
+    }
+
+    .button-container {
+        width: 90vw;
+        /* Tamanho da barra em telas pequenas */
+    }
+}
+
+@media (min-width: 1200px) {
+    .icon {
+        font-size: 2vw;
+        /* Menor em telas grandes */
+    }
+}
