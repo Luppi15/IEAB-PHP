@@ -45,7 +45,7 @@
                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
             </svg>
         </button>
-        <button class="button">
+        <button class="button" onclick="window.location.href='/login'">
             <svg
                 class="icon"
                 stroke="currentColor"
@@ -65,17 +65,25 @@
                 class="icon"
                 stroke="currentColor"
                 fill="none"
-                stroke-width="2"
+                stroke-width="1.5"
                 viewBox="0 0 24 24"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="21" r="1"></circle>
-                <circle cx="20" cy="21" r="1"></circle>
                 <path
-                    d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"></path>
             </svg>
         </button>
+
+        </svg>
+
     </div>
+
+    <div>
+        @yield('conteudo')
+    </div>
+</body>
+
+</html>

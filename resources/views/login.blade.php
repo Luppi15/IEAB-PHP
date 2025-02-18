@@ -1,4 +1,6 @@
-@include('topo')
+@extends('master')
+
+@section('conteudo')
 <div class="container mx-auto px-4 py-8">
     <h1 class="text-4xl font-bold mb-4">Login</h1>
     <form action="/login" method="POST" class="bg-white p-6 rounded-lg shadow-md">
@@ -16,4 +18,4 @@
         </div>
     </form>
 </div>
-@include('final')
+@endsection
