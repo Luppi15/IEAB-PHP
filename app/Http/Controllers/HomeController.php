@@ -15,4 +15,14 @@ class HomeController extends Controller
     {
         return view('login');
     }
+
+    public function ofertas()
+    {
+        return view('ofertas');
+    }
+
+    public function biblia()
+    {
+        return view('biblia');
+    }
 }
